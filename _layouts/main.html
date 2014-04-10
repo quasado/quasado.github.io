@@ -19,11 +19,11 @@
     <div class="header">
         <ul class="nav nav-pills pull-right">
             {% assign current = page.url | downcase | split: '/' %}
-            <li {% if current[1] == 'index.html' %}class='active'{% endif %}><a href='/index.html'>Home</a></li>
-            <li {% if current[1] == 'gravit.html' %}class='active'{% endif %}><a href='/gravit.html'>Gravit</a></li>
-            <li {% if current[1] == 'about.html' %}class='active'{% endif %}><a href='/about.html'>About</a></li>
+            <li {% if page.title == '' %}class='active'{% endif %}><a href='/'>Home</a></li>
+            <li {% if current[1] == 'gravit' %}class='active'{% endif %}><a href='/gravit'>Gravit</a></li>
+            <li {% if current[1] == 'about' %}class='active'{% endif %}><a href='/about'>About</a></li>
         </ul>
-        <h3 class="text-muted">Quasado</h3>
+        <h3 class="text-muted">Quasado: -{{ page.title }}-</h3>
     </div>
 
 

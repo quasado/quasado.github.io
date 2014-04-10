@@ -3,8 +3,13 @@ layout: main
 title: home
 jumbotron: <img class="img-responsive" src="images/keyvisual/home.png" alt="" />
 ---
-
-sdgsdgdsgdsgdsg
+<ul>
+    {% for post in site.posts %}
+    <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
 
     <div class="row marketing">
         <div class="col-lg-6">
