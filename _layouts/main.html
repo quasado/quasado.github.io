@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="google-site-verification" content="yBTCpc7qO6QDP3ai8gNdo9iE0WSDRGZkFio19Vv99Z4" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+   <link rel="icon" href="images/favicon.png" type="image/png" />
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title>Quasado&nbsp;&ndash;&nbsp;Design Tools with Q</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+            {% assign current = page.url | downcase | split: '/' %}
+            <li {% if current[1] == 'index.html' %}class='active'{% endif %}><a href='/index.html'>Home</a></li>
+            <li {% if current[1] == 'gravit.html' %}class='active'{% endif %}><a href='/gravit.html'>Gravit</a></li>
+            <li {% if current[1] == 'about.html' %}class='active'{% endif %}><a href='/about.html'>About</a></li>
+        </ul>
+        <h3 class="text-muted">Quasado</h3>
+    </div>
+
+
+
+    {% if page.jumbotron %}
+    <div class="jumbotron">
+        {{ page.jumbotron }}
+    </div>
+    {% endif %}
+
+    {{ content }}
+
+    <div class="footer">
+        <p>&copy; Company 2014</p>
+    </div>
+</div>
+</body>
+</html>
