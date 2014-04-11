@@ -18,7 +18,7 @@
 
 <div class="container frame">
     <div class="row header">
-        <div class="col-md-4 col-md-offset-2">
+        <div class="col-md-6 col-md-offset-1">
             <a href="/" title="Go to Home">
                 <img class="img-responsive" src="/resources/images/logo-header.png">
             </a>
@@ -40,20 +40,68 @@
         {{ content }}
     </div>
     <div class="row footer">
-        <div class="col-md-6 col-md-offset-2">
-            What's next? <strong>Get fresh news</strong>
-            <input placeholder="Newsletter Signup">
-            <button>Signup</button>
-        </div>
-        <div class="col-md-4">
-            <a href="http://www.facebook.com/quasado" target="_blank"><img src="/resources/images/icon_facebook.png"></a>
-            <a href="http://www.twitter.com/quasado" target="_blank"><img src="/resources/images/icon_twitter.png"></a>
-            <a href="https://www.youtube.com/channel/UCYx4QEhlf449X_5G5OUK-qw" target="_blank"><img src="/resources/images/icon_youtube.png"></a>
+        <div class="col-md-11 col-md-offset-1 content">
+            <h1 style="display:inline-block">What's next? <strong>Get fresh news</strong></h1>
+            <form action="http://quasado.us8.list-manage1.com/subscribe/post?u=75ff003d79c86ba72f9eb1765&amp;id=9b777acc7a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="your email">
+                <input type="submit" value="sign up" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_75ff003d79c86ba72f9eb1765_9b777acc7a" value=""></div>
+            </form>
+            <div class="social">
+                <a href="http://www.facebook.com/quasado" target="_blank" style="margin-left: 15px;"><img src="/resources/images/icon_facebook.png"></a>
+                <a href="http://www.twitter.com/quasado" target="_blank"><img src="/resources/images/icon_twitter.png"></a>
+                <a href="https://www.youtube.com/channel/UCYx4QEhlf449X_5G5OUK-qw" target="_blank"><img src="/resources/images/icon_youtube.png"></a>
+            </div>
         </div>
     </div>
 </div>
-<div class="container copyright">&copy; 2014 Quasado e.K. | <a href="/impress">Impress</a></div>
-
+<div class="container">
+    <div class="row copyright">
+        <div class="col-md-6 col-md-offset-1">
+            &copy; 2014 Quasado&nbsp;&nbsp;&nbsp;<a href="/impress">Impress</a>
+        </div>
+        <div class="col-md-5" style="text-align: right">
+            <div id="facebook">
+                <iframe
+                        src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwwww.facebook.com%2Fquasado&amp;send=false&amp;layout=button_count&amp;width=134&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21"
+                        scrolling="no" frameborder="0"
+                        style="border: none; overflow: hidden; width: 134px; height: 21px;"
+                        allowtransparency="true"></iframe>
+            </div>
+            <div id="twitter">
+                <a href="https://twitter.com/share" class="twitter-share-button"
+                   data-url="http://www.quasado.com" data-text="Check out Quasado"
+                   data-via="Quasado" data-related="Quasado">Tweet</a>
+                <script type="text/javascript">
+                    !function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "//platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, "script", "twitter-wjs");
+                </script>
+            </div>
+            <div id="googleplus">
+                <div class="g-plusone" data-size="medium"
+                     data-href="http://www.quasado.com/"></div>
+                <script type="text/javascript">
+                    (function () {
+                        var po = document.createElement('script');
+                        po.type = 'text/javascript';
+                        po.async = true;
+                        po.src = 'https://apis.google.com/js/plusone.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(po, s);
+                    })();
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <script type="text/javascript">

@@ -36,12 +36,40 @@ body {
     background: #475258;
     color: #1a1f22;
     font-family: 'proxima_nova_rgregular';
+    font-size: 24px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'proxima_nova_ltsemibold';
     font-weight: normal;
     color: #008bcf;
+}
+
+h1 {
+    font-family: 'proxima_nova_ltlight';
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+h1 strong {
+    font-family: 'proxima_nova_ltsemibold';
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+h1:first-child {
+    margin-top: 0px;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+p:last-child {
+    margin-bottom: 0px;
 }
 
 /** Main Template */
@@ -62,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #1a1f22;
     text-transform: uppercase;
     font-family: 'proxima_nova_ltlight';
+    font-size: 18px;
 }
 
 .header .nav li a:hover, .header .nav li.active a {
@@ -80,10 +109,42 @@ h1, h2, h3, h4, h5, h6 {
     padding: 30px 0px;
 }
 
+.footer .content * {
+    margin: 0px;
+}
+
+.footer input {
+    border: none;
+    font-family: 'proxima_nova_ltlight';
+    padding: 5px 15px;
+}
+
+.footer input[type="email"] {
+    background: #e9eaeb;
+    color: #9fa7b7;
+}
+
+.footer input[type="submit"] {
+    background: #008bcf;
+    color: #e9eaeb;
+}
+
+.footer form, .footer .social {
+    margin-left: 15px;
+    display: inline-block;
+}
+
 .copyright {
+    margin-top: 15px;
+}
+
+.copyright * {
     color: #ffffff;
-    margin-top: 20px;
-    font-size: 80%;
+    font-size: 14px;
+}
+
+.copyright div {
+    display: inline-block;
 }
 
 @media (min-width: 1280px) {
@@ -95,11 +156,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /** Modules */
 .box {
-    padding: 20px 30px;
+    padding: 40px 0px;
 }
 
 .box-large {
-    padding: 60px 50px;
+    padding: 60px 0px;
 }
 
 .box-cl1 {
@@ -115,10 +176,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #1a1f22;
 }
 
-.box-left {
-    padding-left: 150px;
-}
-
-.box-right {
-    padding-right: 150px;
+.box-cl3 {
+    background: #ecedee;
+    color: #008bcf;
 }
