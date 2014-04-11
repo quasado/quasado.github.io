@@ -1,1 +1,6 @@
-permalink: /:categories/:title/
+permalink: /articles/:categories/:title/
+sections:
+- key: gravit
+  title: Gravit
+- key: company
+  title: About

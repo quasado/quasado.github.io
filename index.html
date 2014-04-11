@@ -1,37 +1,28 @@
 ---
 layout: main
-title: home
-jumbotron: <img class="img-responsive" src="images/keyvisual/home.png" alt="" />
+title: Design Tools with Q
+jumbotron: <img class="img-responsive" src="/home/resources/images/jumbotron.png" alt="" />
 ---
-<ul>
-    {% for post in site.posts %}
-    <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
-
-    <div class="row marketing">
-        <div class="col-lg-6">
-            <h4>Subheading</h4>
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-            <h4>Subheading</h4>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-            <h4>Subheading</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-
-        <div class="col-lg-6">
-            <h4>Subheading</h4>
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-            <h4>Subheading</h4>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-            <h4>Subheading</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
+<div class="row footer">
+    <div class="col-md-8 col-md-offset-2">
+        <h1>Q stands for <strong>new values</strong></h1>
+        <p class="lead">We develop design tools and technologies for the next big thing. With joy of use and fluent workflow concepts aligned with the needs of the user and not dictated by technological requirements. Thus we create alternatives that bring new values to the user’s everyday life.</p>
     </div>
+</div>
 
+<div class="row">
+    <div class="col-md-6 box box-large box-left box-cl1">
+        <h2>Recent <strong>Tweets</strong></h2>
+        <p>dgsdggd</p>
+    </div>
+    <div class="col-md-6 box box-large box-right box-cl2">
+        <h2>Latest <strong>Articles</strong></h2>
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <a href="{{ post.url }}">{{ post.title }} ({{ post.category }})</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

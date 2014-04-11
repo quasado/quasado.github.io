@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/* Generic */
+body {
+    background: rgb(70, 80, 90);
+    color: rgb(70, 80, 90);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(0, 140, 210);
+}
+
+/** Main Template */
+.frame {
+    background: white;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.15);
+}
+
+.header {
+    padding: 50px 0px;
+}
+
+.header .nav li a {
+    padding-top: 33px;
+    padding-bottom: 0px;
+    height: 100%;
+    color: rgb(70, 80, 90);
+    text-transform: uppercase;
+}
+
+.header .nav li a:hover, .header .nav li.active a {
+    background: transparent;
+    color: rgb(0, 140, 210);
+}
+
+.container .jumbotron {
+    background: transparent;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer {
+    padding: 30px 0px;
+}
+
+.copyright {
+    color: rgb(159, 167, 183);
+    margin-top: 20px;
+    font-size: 80%;
+}
+
+@media (min-width: 1280px) {
+    .container{
+        width: 1280px;
+        padding: 0px;
+    }
+}
+
+/** Modules */
+.box {
+    padding: 20px 30px;
+}
+
+.box-large {
+    padding: 60px 50px;
+}
+
+.box-cl1 {
+    background: rgb(70, 80, 90);
+    color: rgb(159, 167, 183);
+}
+.box-cl1 h1, .box-cl1 h2, .box-cl1 h3, .box-cl1 h4, .box-cl1 h5, .box-cl1 h6 {
+    color: white;
+}
+
+.box-cl2 {
+    background: rgb(255, 234, 45);
+    color: rgb(70, 80, 90);
+}
+
+.box-left {
+    padding-left: 150px;
+}
+
+.box-right {
+    padding-right: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/** Specific */
+.navbar {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: none;
+}
+
+.navbar .container {
+    background: white;
+    padding: 26px 150px;
+}
+
+.navbar .navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+
+.content {
+    overflow: hidden;
+}
