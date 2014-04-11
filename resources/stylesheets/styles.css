@@ -1,10 +1,7 @@
 @font-face {
     font-family: 'proxima_nova_ltlight';
     src: url('../fonts/ProximaNova-Light-webfont.eot');
-    src: url('../fonts/ProximaNova-Light-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/ProximaNova-Light-webfont.woff') format('woff'),
-    url('../fonts/ProximaNova-Light-webfont.ttf') format('truetype'),
-    url('../fonts/ProximaNova-Light-webfont.svg#proxima_nova_ltlight') format('svg');
+    src: url('../fonts/ProximaNova-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Light-webfont.woff') format('woff'), url('../fonts/ProximaNova-Light-webfont.ttf') format('truetype'), url('../fonts/ProximaNova-Light-webfont.svg#proxima_nova_ltlight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -12,10 +9,7 @@
 @font-face {
     font-family: 'proxima_nova_rgregular';
     src: url('../fonts/ProximaNova-Reg-webfont.eot');
-    src: url('../fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/ProximaNova-Reg-webfont.woff') format('woff'),
-    url('../fonts/ProximaNova-Reg-webfont.ttf') format('truetype'),
-    url('../fonts/ProximaNova-Reg-webfont.svg#proxima_nova_rgregular') format('svg');
+    src: url('../fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Reg-webfont.woff') format('woff'), url('../fonts/ProximaNova-Reg-webfont.ttf') format('truetype'), url('../fonts/ProximaNova-Reg-webfont.svg#proxima_nova_rgregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,10 +17,7 @@
 @font-face {
     font-family: 'proxima_nova_ltsemibold';
     src: url('../fonts/ProximaNova-Sbold-webfont.eot');
-    src: url('../fonts/ProximaNova-Sbold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/ProximaNova-Sbold-webfont.woff') format('woff'),
-    url('../fonts/ProximaNova-Sbold-webfont.ttf') format('truetype'),
-    url('../fonts/ProximaNova-Sbold-webfont.svg#proxima_nova_ltsemibold') format('svg');
+    src: url('../fonts/ProximaNova-Sbold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Sbold-webfont.woff') format('woff'), url('../fonts/ProximaNova-Sbold-webfont.ttf') format('truetype'), url('../fonts/ProximaNova-Sbold-webfont.svg#proxima_nova_ltsemibold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -42,7 +33,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'proxima_nova_ltsemibold';
     font-weight: normal;
-    color: #008bcf;
+    line-height: 1.5em;
 }
 
 h1 {
@@ -60,22 +51,53 @@ h2 {
     margin-bottom: 16px;
 }
 
-h1:first-child {
+h1:first-child, h2:first-child, p:first-child {
     margin-top: 0px;
+}
+
+h1:last-child, h2:last-child, p:last-child {
+    margin-bottom: 0px;
 }
 
 p {
     line-height: 1.5em;
 }
 
-p:last-child {
-    margin-bottom: 0px;
+ul, ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul li {
+    margin-top: 0.5em;
+}
+
+ul.icons, ul.icons li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.icons li {
+    margin: 0.5em 1em 0em 1em;
+}
+
+ul.icons li:before {
+    content: '';
+    background-image: url('../images/bullet.png');
+    background-repeat: no-repeat;
+    background-position: 0px 8px;
+    float: left;
+    margin-left: -1em;
+    width: 16px;
+    height: 24px;
 }
 
 /** Main Template */
 .frame {
     background: white;
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 }
 
@@ -148,35 +170,64 @@ p:last-child {
 }
 
 @media (min-width: 1280px) {
-    .container{
+    .container {
         width: 1280px;
         padding: 0px;
     }
 }
 
 /** Modules */
-.box {
+/* Top/Bottom Margin for Boxes */
+.box-mg {
     padding: 40px 0px;
 }
 
-.box-large {
-    padding: 60px 0px;
+/** Regular Box */
+.box {
+    background: white;
+    color: #1a1f22;
 }
 
-.box-cl1 {
+.box h1, .box h2 {
+    color: #008bcf;
+}
+
+/* Dark Box */
+.box-dark {
     background: #475258;
     color: #9fa7b7;
 }
-.box-cl1 h1, .box-cl1 h2, .box-cl1 h3, .box-cl1 h4, .box-cl1 h5, .box-cl1 h6 {
-    color: white;
+
+.box-dark h1, .box-dark h2 {
+    color: #ffffff;
 }
 
-.box-cl2 {
+/** Light Box */
+.box-light {
+    background: #ecedee;
+    color: #008bcf;
+}
+
+.box-light h1, .box-light h2 {
+    color: #008bcf;
+}
+
+/** Colored Box */
+.box-color {
     background: #ffed00;
     color: #1a1f22;
 }
 
-.box-cl3 {
-    background: #ecedee;
+.box-color h1, .box-color h2 {
     color: #008bcf;
+}
+
+/** Colored Box Variant 2 */
+.box-color2 {
+    background: #008bcf;
+    color: #ffffff;
+}
+
+.box-color2 h1, .box-color2 h2 {
+    color: #ffffff;
 }

@@ -4,14 +4,14 @@ title: Design Tools with Q
 jumbotron: <img class="img-responsive" src="/home/resources/images/jumbotron.png" alt="" />
 ---
 <div class="row">
-    <div class="col-md-8 col-md-offset-1 box">
+    <div class="col-md-8 col-md-offset-1 box box-mg">
         <h1>Q stands for <strong>new values</strong></h1>
         <p>We develop design tools and technologies for the next big thing. With joy of use and fluent workflow concepts aligned with the needs of the user and not dictated by technological requirements. Thus we create alternatives that bring new values to the user’s everyday life.</p>
     </div>
 </div>
 
-<div class="row box-cl2">
-    <div class="col-md-6 box box-cl1">
+<div class="row box-dark">
+    <div class="col-md-6 box-mg">
         <div class="row">
             <div class="col-md-9 col-md-offset-2">
                 <h1>Recent <strong>Tweets</strong></h1>
@@ -22,18 +22,23 @@ jumbotron: <img class="img-responsive" src="/home/resources/images/jumbotron.png
             </div>
         </div>
     </div>
-    <div class="col-md-6 box">
+    <div class="col-md-6 box-color box-mg">
         <div class="row">
             <div class="col-md-8 col-md-offset-1">
                 <h1>Latest <strong>Articles</strong></h1>
                 <p>
                 <ul>
-                    {% for post in site.posts %}
+                    {% for post in site.posts limit:2 %}
                     <li>
                         <a href="{{ post.url }}">{{ post.title }} ({{ post.category }})</a>
+                        <br/>
+                        {{ post.subtitle }}
                     </li>
                     {% endfor %}
                 </ul>
+                </p>
+                <p>
+                    <a href="#">More ...</a>
                 </p>
             </div>
         </div>
