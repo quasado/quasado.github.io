@@ -28,16 +28,16 @@ jumbotron: <img class="img-responsive" src="/home/resources/images/jumbotron.png
                 <h1>Latest <strong>Articles</strong></h1>
                 <p>
                 <ul>
-                    {% for post in site.posts limit:2 %}
+                    {% for post in site.posts limit:3 %}
                     <li>
-                        <a href="{{ post.url }}">{{ post.title }} ({{ post.category }})</a>
+                        <h2 style="display: inline-block;margin: 0px;">{{ post.title }}</h2>
                         <br/>
                         {{ post.subtitle }}
                     </li>
                     {% endfor %}
                 </ul>
                 </p>
-                <p>
+                <p style="display:none">
                     <a href="#">More ...</a>
                 </p>
             </div>

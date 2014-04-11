@@ -24,10 +24,10 @@
 .screenshoot-slider .viewport {
     position: absolute;
     left: 17px;
-    top: 16px;
+    top: 17px;
     width: 424px;
     height: 240px;
-    background: red;
+    background: url('../images/screenshoots/screenshoot_small_01.png');
 }
 
 .screenshoot-slider .overlay {
@@ -42,6 +42,7 @@
     width: 100%;
     height: 100%;
     background: url('../images/screenshot_slider_bullets_normal.png');
+    display: none;
 }
 
 .feature > .text {

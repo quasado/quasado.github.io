@@ -1,0 +1,74 @@
+---
+layout: main
+section: company
+title: Get in touch
+jumbotron: <img class="img-responsive" src="resources/images/jumbotron.png" alt="" />
+---
+<script type="text/javascript"> <!--
+function UnCryptMailto( s )
+{
+    var n = 0;
+    var r = "";
+    for( var i = 0; i < s.length; i++)
+    {
+        n = s.charCodeAt( i );
+        if( n >= 8364 )
+        {
+            n = 128;
+        }
+        r += String.fromCharCode( n - 1 );
+    }
+    return r;
+}
+
+function linkTo_UnCryptMailto( s )
+{
+    location.href=UnCryptMailto( s );
+}
+// --> </script>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-1 box box-mg">
+        <h1>Get in <strong>touch</strong> with us</h1>
+        <p>We do give a very high value on personal contact. You may reach us within different channels like phone, E-Mail as well as Facebook and Twitter. Whether it might be questions on our products or request for one of our services, we're always happy to hear from you.</p>
+    </div>
+</div>
+
+<div class="row box-dark">
+    <div class="col-md-6 box-mg">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <h1>Contact</h1>
+                <p>
+                Quasado e.K.<br/>
+                Schloßstr. 50<br/>
+                12165 Berlin<br/>
+                T +49 (030) 84416259<br/>
+                <a href="javascript:linkTo_UnCryptMailto('nbjmup;jogpArvbtbep/dpn');">info'at'quasado.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 box-color box-mg">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-1">
+                <h1>Impress</h1>
+                <h4>VERANTWORTLICH FÜR INHALT</h4>
+                Quasado e.K.<br/>
+                Schloßstr. 50<br/>
+                D-12165 Berlin<br/>
+                T +49 (030) 84416259<br/>
+                </p>
+                <p>
+                <h4>AMTSGERICHT BERLIN-CHARLOTTENBURG</h4>
+                HRA 49256 B
+                </p>
+                <p>
+                <h4>GESCHÄFTSFÜHRER</h4>
+                Alexander Adam
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
