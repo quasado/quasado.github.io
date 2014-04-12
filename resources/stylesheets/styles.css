@@ -179,7 +179,8 @@ ul.icons li:before {
 /** Modules */
 /* Top/Bottom Margin for Boxes */
 .box-mg {
-    padding: 40px 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 /** Regular Box */
