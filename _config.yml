@@ -3,6 +3,16 @@ markdown: kramdown
 permalink: /articles/:categories/:title/
 sections:
 - key: gravit
+  icon: icon_gravit
   title: Gravit
+  pages:
+  - key: index
+    title: Overview
 - key: company
-  title: About
+  icon: icon_quasado
+  title: Company
+  pages:
+  - key: index
+    title: About us
+  - key: contact
+    title: Contact

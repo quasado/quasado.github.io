@@ -1,5 +1,6 @@
 ---
 layout: main
+section: home
 title: Design Tools with Q
 jumbotron: <img class="img-responsive" src="/home/resources/images/jumbotron.png" alt="" />
 ---
@@ -10,40 +11,5 @@ jumbotron: <img class="img-responsive" src="/home/resources/images/jumbotron.png
     </div>
     <div class="col-md-3 hidden-xs">
         <a href="/gravit"><img src="/home/resources/images/gravit.png" style="margin-left: 15px; margin-top: 30px"></a>
-    </div>
-</div>
-
-<div class="row box-dark">
-    <div class="col-md-6 box-mg">
-        <div class="row">
-            <div class="col-md-9 col-md-offset-2">
-                <h1>Recent <strong>Tweets</strong></h1>
-                <div>
-                    <a class="twitter-timeline" href="https://twitter.com/quasado" data-widget-id="454555139190177792" data-chrome="transparent noheader nofooter noborders noscrollbar" data-tweet-limit="3" data-theme="dark" data-link-color="#008bcf">Tweets by @quasado</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 box-color box-mg">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-1">
-                <h1>Latest <strong>Articles</strong></h1>
-                <p>
-                <ul>
-                    {% for post in site.posts limit:3 %}
-                    <li>
-                        <h2 style="display: inline-block;margin: 0px;">{{ post.title }}</h2>
-                        <br/>
-                        {{ post.subtitle }}
-                    </li>
-                    {% endfor %}
-                </ul>
-                </p>
-                <p style="display:none">
-                    <a href="#">More ...</a>
-                </p>
-            </div>
-        </div>
     </div>
 </div>

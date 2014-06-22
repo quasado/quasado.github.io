@@ -18,22 +18,30 @@
     <title>Quasado&nbsp;&ndash;&nbsp;{{ page.title }}</title>
 </head>
 <body>
-
-<div class="container frame">
-    <div class="row header">
+<div class="row header" style="position:fixed;right:0px;top:0px;left:0px;z-index: 99999">
+    <div class="container">
         <div class="col-md-6 col-md-offset-1">
-            <a href="/" title="Go to Home">
-                <img class="img-responsive" src="/resources/images/logo-header.png">
-            </a>
-        </div>
-        <div class="col-md-4">
-            <ul class="nav nav-pills pull-right" style="height:100%">
+            <ul class="nav-sections nav nav-pills" style="height:100%">
                 {% for section in site.sections %}
-                <li {% if page.section == section.key %}class='active'{% endif %}><a href='/{{ section.key }}/'>{{ section.title }}</a></li>
+                <li {% if page.section == section.key %}class='active'{% endif %}><a href="/{{ section.key }}/"><img src="/resources/images/{{ section.icon }}.png">&nbsp;{{ section.title }}</a></li>
                 {% endfor %}
             </ul>
         </div>
+        <div class="col-md-4">
+            <ul class="nav-pages nav nav-pills pull-right" style="height:100%">
+                {% for section in site.sections %}
+                    {% if page.section == section.key %}
+                        {% for page_ in section.pages %}
+                            <li {% if page.key == page_.key %}class='active'{% endif %}><a {% if page_.key == 'index' %}href='/{{ section.key }}/'{% else %}href='/{{ section.key }}/{{ page_.key }}'{% endif %}>{{ page_.title }}</a></li>
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+                <li><a href="http://medium.com/quasado-blog" target="_blank">Blog</a></li>
+            </ul>
+        </div>
     </div>
+</div>
+<div class="container frame">
     {% if page.jumbotron %}
     <div class="jumbotron">
         {{ page.jumbotron }}
@@ -61,10 +69,7 @@
 </div>
 <div class="container">
     <div class="row copyright">
-        <div class="col-md-6 col-md-offset-1">
-            &copy; 2014 Quasado&nbsp;&nbsp;&nbsp;<a href="/company/contact">Impress | Get in touch</a>
-        </div>
-        <div class="col-md-5 social" style="text-align: right">
+        <div class="col-md-6">
             <div id="facebook">
                 <iframe
                         src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwwww.facebook.com%2Fquasado&amp;send=false&amp;layout=button_count&amp;width=134&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21"
@@ -102,6 +107,14 @@
                     })();
                 </script>
             </div>
+        </div>
+        <div class="col-md-6">
+            <ul class="nav nav-pills pull-right">
+                <li><a href="/company">About us</a></li>
+                <li><a href="http://medium.com/quasado-blog" target="_blank">Blog</a></li>
+                <li><a href="/company/contact">Contact</a></li>
+                <li><a href="/company/contact">Impress</a></li>
+            </ul>
         </div>
     </div>
 </div>

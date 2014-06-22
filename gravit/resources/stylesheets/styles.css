@@ -5,6 +5,7 @@
 
 .gravit-jumbotron > div {
     position: absolute;
+    font-size: 24px;
     left: 850px;
     top: 315px;
     color: #e30061;
@@ -43,11 +44,6 @@
     height: 100%;
     background: url('../images/screenshot_slider_bullets_normal.png');
     display: none;
-}
-
-.feature > .text {
-    text-align: center;
-    margin-top: 25px;
 }
 
 /** Overwrites */
