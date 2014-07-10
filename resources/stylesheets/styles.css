@@ -27,7 +27,7 @@ body {
     background: #475258;
     color: #1a1f22;
     font-family: 'proxima_nova_rgregular';
-    font-size: 20px;
+    font-size: 24px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 36px;
     margin-bottom: 24px;
 }
 
@@ -46,7 +46,7 @@ strong {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 16px;
 }
 
@@ -100,43 +100,23 @@ ul.icons li:before {
     overflow: hidden;
 }
 
-.header .container {
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.header ul li {
-    margin-top: 0px;
+.header {
+    padding: 50px 0px 20px 0px;
 }
 
 .header .nav li a {
-    border-radius: 0px;
-    font-family: 'proxima_nova_ltlight';
-    font-size: 16px;
-    color: white;
-    text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4px;
-}
-
-.header .nav li.active a, .header .nav li a:hover {
-    background: transparent;
-    color: white;
-}
-
-.header .nav-sections li a {
+    padding-top: 33px;
+    padding-bottom: 0px;
+    height: 100%;
+    color: #1a1f22;
     text-transform: uppercase;
+    font-family: 'proxima_nova_ltlight';
+    font-size: 18px;
 }
 
-.header .nav-sections li.active a {
-    background: rgba(0, 0, 0, 0.35);
-    text-shadow: none;
-}
-
-.header .nav-pages li a {
-
-}
-
-.header .nav-pages li.active a {
-    padding-bottom: 7px;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.35);
+.header .nav li a:hover, .header .nav li.active a {
+    background: transparent;
+    color: #008bcf;
 }
 
 .container .jumbotron {
@@ -172,6 +152,7 @@ ul.icons li:before {
 }
 
 .footer form, .footer .social {
+    margin-left: 15px;
     display: inline-block;
 }
 
@@ -182,26 +163,10 @@ ul.icons li:before {
 .copyright * {
     color: #ffffff;
     font-size: 14px;
-    font-family: 'proxima_nova_ltlight';
 }
 
 .copyright div {
     display: inline-block;
-}
-
-.copyright .nav li {
-    margin-top: 0px;
-}
-
-.copyright .nav li a {
-    padding: 0px 10px;
-    border-radius: 0px;
-}
-
-.copyright .nav li.active a, .copyright .nav li a:hover {
-    background: transparent;
-    color: white;
-    border-bottom: 2px solid white;
 }
 
 @media (min-width: 1280px) {

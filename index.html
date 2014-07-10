@@ -1,15 +1,49 @@
 ---
 layout: main
-section: home
 title: Design Tools with Q
 jumbotron: <img class="img-responsive" src="/home/resources/images/jumbotron.png" alt="" />
 ---
 <div class="row box box-mg">
     <div class="col-md-7 col-md-offset-1">
         <h1>Q stands for <strong>new values</strong></h1>
-        <p>We develop <a href="/gravit">design tools</a> and <a href="/company/#services">technologies</a> for the next big thing. With joy of use and fluent workflow concepts aligned with the needs of the user and not dictated by technological requirements. Thus we create alternatives that bring new values to the user’s everyday life.</p>
+        <p>We develop <a href="http://www.gravit.io" target="_blank">design tools</a> and <a href="/company/#services">technologies</a> for the next big thing. With joy of use and fluent workflow concepts aligned with the needs of the user and not dictated by technological requirements. Thus we create alternatives that bring new values to the user’s everyday life.</p>
     </div>
     <div class="col-md-3 hidden-xs">
-        <a href="/gravit"><img src="/home/resources/images/gravit.png" style="margin-left: 15px; margin-top: 30px"></a>
+        <a href="http://www.gravit.io" target="_blank"><img src="/home/resources/images/gravit.png" style="margin-left: 15px; margin-top: 30px"></a>
+    </div>
+</div>
+
+<div class="row box-dark">
+    <div class="col-md-6 box-mg">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <h1>Recent <strong>Tweets</strong></h1>
+                <div>
+                    <a class="twitter-timeline" href="https://twitter.com/quasado" data-widget-id="454555139190177792" data-chrome="transparent noheader nofooter noborders noscrollbar" data-tweet-limit="3" data-theme="dark" data-link-color="#008bcf">Tweets by @quasado</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 box-color box-mg">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-1">
+                <h1>Latest <strong>Articles</strong></h1>
+                <p>
+                <ul>
+                    {% for post in site.posts limit:3 %}
+                    <li>
+                        <h2 style="display: inline-block;margin: 0px;">{{ post.title }}</h2>
+                        <br/>
+                        {{ post.subtitle }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                </p>
+                <p style="display:none">
+                    <a href="#">More ...</a>
+                </p>
+            </div>
+        </div>
     </div>
 </div>
